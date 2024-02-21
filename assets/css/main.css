@@ -1,0 +1,193 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    width: 500px;
+    height: 650px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+.todo_list_top {
+    width: 100%;
+    height: 150px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.todo_list_top_content {
+    display: flex;
+    gap: 20px;
+}
+
+.todo_input_div {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.todo_input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-indent: 10px;
+    font-size: 17px;
+    color: dodgerblue;
+    outline: none;
+    border-radius: 5px;
+}
+
+.bi-x {
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    color: red;
+}
+
+.submit {
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid transparent;
+    transition: .5s;
+    background-color: green;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.submit:hover {
+    background-color: transparent;
+    color: green;
+    border-color: green;
+    transition: .5s;
+}
+
+.btn_all_delete {
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    transition: .5s;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    margin-top: 55px;
+}
+
+.btn_all_delete:hover {
+    background-color: transparent;
+    color: red;
+    border-color: red;
+    transition: .5s;
+}
+
+.todo_task {
+    margin-top: 15px;
+    width: 100%;
+    height: 450px;
+    overflow-y: auto;
+}
+
+.todo_card {
+    width: 90%;
+    height: 130px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(0);
+    }
+
+    20% {
+        transform: scale(1);
+    }
+
+    40% {
+        transform: scale(0.8);
+    }
+
+    60% {
+        transform: scale(1);
+    }
+
+    80% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.btn_complete,
+.btn_edit,
+.btn_data,
+.btn_delete {
+    width: 80px;
+    height: 50px;
+    background-color: green;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    color: white;
+}
+
+.btn_edit {
+    background-color: gold;
+}
+
+.btn_data {
+    background-color: dodgerblue;
+}
+
+.btn_delete {
+    background-color: red;
+}
+
+.input_text {
+    color: green;
+    padding: 5px 10px;
+}
+
+.complite {
+    background-color: purple;
+    text-decoration: line-through;
+    color: white;
+    border-radius: 5px;
+}
+
